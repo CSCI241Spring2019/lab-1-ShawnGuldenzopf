@@ -1,0 +1,820 @@
+guldens@CF165-06:~$ script
+Script started, file is typescript
+guldens@CF165-06:~$ mkdir csci241
+guldens@CF165-06:~$ cd csci241
+guldens@CF165-06:~/csci241$ ls
+guldens@CF165-06:~/csci241$ git clone https://github.com/CSCI241Spring2019/lab-1-ShawnGuldenzopf.git
+Cloning into 'lab-1-ShawnGuldenzopf'...
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 8 (delta 0), reused 8 (delta 0), pack-reused 0
+Unpacking objects: 100% (8/8), done.
+Checking connectivity... done.
+guldens@CF165-06:~/csci241$ git config --global user.guldens
+guldens@CF165-06:~/csci241$ git config --global user.guldens@wwu.edu
+guldens@CF165-06:~/csci241$ git config --global user.ShawnGuldenzopf
+guldens@CF165-06:~/csci241$ git config --global user.guldens@wwu.edu
+guldens@CF165-06:~/csci241$ touch writeup.txt
+guldens@CF165-06:~/csci241$ git add writeup.txt
+fatal: Not a git repository (or any parent up to mount point /home)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+guldens@CF165-06:~/csci241$ cd lab-1-ShawnGuldenzopf
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git add writeup.txt
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git commit -m "Added an empty file, writeup.txt"
+[master 0a91992] Added an empty file, writeup.txt
+ Committer: Shawn Guldenzopf <guldens@LabImage2016-17>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 writeup.txt
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': ShawnGuldenzopf
+Password for 'https://ShawnGuldenzopf@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 340 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/CSCI241Spring2019/lab-1-ShawnGuldenzopf.git
+   1523c09..0a91992  master -> master
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git add writeup.txt
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git commit -m "Added part 1 (names) to writeup.txt"
+[master fed1aa8] Added part 1 (names) to writeup.txt
+ Committer: Shawn Guldenzopf <guldens@LabImage2016-17>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git add writeup.txt
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   writeup.txt
+
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git commit -m "Added hobbies to writeup.txt"
+[master 6089279] Added hobbies to writeup.txt
+ Committer: Shawn Guldenzopf <guldens@LabImage2016-17>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': ShawnGuldenzopf
+Password for 'https://ShawnGuldenzopf@github.com': 
+Counting objects: 6, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 621 bytes | 0 bytes/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/CSCI241Spring2019/lab-1-ShawnGuldenzopf.git
+   0a91992..6089279  master -> master
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ touch username.txt
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git add username.txt
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git commit -m "Added step 13 (name, wwu, github name) to username.txt"
+[master 3ad1911] Added step 13 (name, wwu, github name) to username.txt
+ Committer: Shawn Guldenzopf <guldens@LabImage2016-17>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 username.txt
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': git push origin master
+Password for 'https://git push origin master@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/CSCI241Spring2019/lab-1-ShawnGuldenzopf.git/'
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': ShawnGuldenzopf
+Password for 'https://ShawnGuldenzopf@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 414 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/CSCI241Spring2019/lab-1-ShawnGuldenzopf.git
+   6089279..3ad1911  master -> master
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ touch test.txt
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git checkout text.txt
+error: pathspec 'text.txt' did not match any file(s) known to git.
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git add test.txt
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git commit -m "added text "test" to test.txt"
+[master bf25972] added text test to test.txt
+ Committer: Shawn Guldenzopf <guldens@LabImage2016-17>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': ShawnGuldenzopf
+Password for 'https://ShawnGuldenzopf@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 289 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+git checkouTo https://github.com/CSCI241Spring2019/lab-1-ShawnGuldenzopf.git
+   3ad1911..bf25972  master -> master
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git checkout test.txt
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git reset test.txt
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git mv test.txt
+usage: git mv [<options>] <source>... <destination>
+
+    -v, --verbose         be verbose
+    -n, --dry-run         dry run
+    -f, --force           force move/rename even if target exists
+    -k                    skip move/rename errors
+
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git mv test.txt test2.txt
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git add test2.txt
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git commit -m "Changed test.txt to test2.txt"
+[master a53ebb6] Changed test.txt to test2.txt
+ Committer: Shawn Guldenzopf <guldens@LabImage2016-17>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename test.txt => test2.txt (100%)
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': ShawnGuldenzopf
+Password for 'https://ShawnGuldenzopf@github.com': 
+Counting objects: 2, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 249 bytes | 0 bytes/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/CSCI241Spring2019/lab-1-ShawnGuldenzopf.git
+   bf25972..a53ebb6  master -> master
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git blame
+usage: git blame [<options>] [<rev-opts>] [<rev>] [--] <file>
+
+    <rev-opts> are documented in git-rev-list(1)
+
+    --incremental         Show blame entries as we find them, incrementally
+    -b                    Show blank SHA-1 for boundary commits (Default: off)
+    --root                Do not treat root commits as boundaries (Default: off)
+    --show-stats          Show work cost statistics
+    --score-debug         Show output score for blame entries
+    -f, --show-name       Show original filename (Default: auto)
+    -n, --show-number     Show original linenumber (Default: off)
+    -p, --porcelain       Show in a format designed for machine consumption
+    --line-porcelain      Show porcelain format with per-line commit information
+    -c                    Use the same output mode as git-annotate (Default: off)
+    -t                    Show raw timestamp (Default: off)
+    -l                    Show long commit SHA1 (Default: off)
+    -s                    Suppress author name and timestamp (Default: off)
+    -e, --show-email      Show author email instead of name (Default: off)
+    -w                    Ignore whitespace differences
+    --minimal             Spend extra cycles to find better match
+    -S <file>             Use revisions from <file> instead of calling git-rev-list
+    --contents <file>     Use <file>'s contents as the final image
+    -C[<score>]           Find line copies within and across files
+    -M[<score>]           Find line movements within and across files
+    -L <n,m>              Process only line range n,m, counting from 1
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git log
+commit a53ebb606210260015e43cac9e74e803e92859f4
+commit a53ebb606210260015e43cac9e74e803e92859f4
+Author: Shawn Guldenzopf <guldens@LabImage2016-17>
+Date:   Thu Apr 11 10:19:35 2019 -0700
+
+    Changed test.txt to test2.txt
+
+commit bf25972d77bacd0e8c4a935460b751f1ce580644
+Author: Shawn Guldenzopf <guldens@LabImage2016-17>
+Date:   Thu Apr 11 10:17:16 2019 -0700
+
+    added text test to test.txt
+
+commit 3ad1911a845fbf3083f5339ca04ef2506ad093b7
+Author: Shawn Guldenzopf <guldens@LabImage2016-17>
+Date:   Thu Apr 11 10:13:53 2019 -0700
+
+    Added step 13 (name, wwu, github name) to username.txt
+
+commit 6089279445a3e108e48c0c1b732048ff5125607d
+Author: Shawn Guldenzopf <guldens@LabImage2016-17>
+Date:   Thu Apr 11 10:09:39 2019 -0700
+
+    Added hobbies to writeup.txt
+...skipping...
+
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
+  b  ^B  ESC-v      *  Backward one window (or N lines).
+  z                 *  Forward  one window (and set window to N).
+  w                 *  Backward one window (and set window to N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to N).
+  u  ^U             *  Backward one half-window (and set half-window to N).
+  ESC-)  RightArrow *  Left  one half screen width (or N positions).
+...skipping...
+  -# [N]  ....  --shift=[N]
+                  Horizontal scroll amount (0 = one half screen width)
+      ........  --no-keypad
+                  Don't send termcap keypad init/deinit strings.
+      ........  --follow-name
+                  The F command changes files if the input file is renamed.
+      ........  --use-backslash
+                  Subsequent options use backslash as escape char.
+
+
+ ---------------------------------------------------------------------------
+
+                          LINE EDITING
+
+        These keys can be used to edit text being entered 
+        on the "command line" at the bottom of the screen.
+
+ RightArrow ..................... ESC-l ... Move cursor right one character.
+ LeftArrow ...................... ESC-h ... Move cursor left one character.
+ ctrl-RightArrow  ESC-RightArrow  ESC-w ... Move cursor right one word.
+ ctrl-LeftArrow   ESC-LeftArrow   ESC-b ... Move cursor left one word.
+ HOME ........................... ESC-0 ... Move cursor to start of line.
+ END ............................ ESC-$ ... Move cursor to end of line.
+ BACKSPACE ................................ Delete char to left of cursor.
+ DELETE ......................... ESC-x ... Delete char under cursor.
+ ctrl-BACKSPACE   ESC-BACKSPACE ........... Delete word to left of cursor.
+ ctrl-DELETE .... ESC-DELETE .... ESC-X ... Delete word under cursor.
+ ctrl-U ......... ESC (MS-DOS only) ....... Delete entire line.
+ UpArrow ........................ ESC-k ... Retrieve previous command line.
+ DownArrow ...................... ESC-j ... Retrieve next command line.
+ TAB ...................................... Complete filename & cycle.
+ SHIFT-TAB ...................... ESC-TAB   Complete filename & reverse cycle.
+ ctrl-L ................................... Complete filename, list all.
+
+
+
+
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
+  b  ^B  ESC-v      *  Backward one window (or N lines).
+  z                 *  Forward  one window (and set window to N).
+  w                 *  Backward one window (and set window to N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to N).
+  u  ^U             *  Backward one half-window (and set half-window to N).
+  ESC-)  RightArrow *  Left  one half screen width (or N positions).
+  ESC-(  LeftArrow  *  Right one half screen width (or N positions).
+  F                    Forward forever; like "tail -f".
+  ESC-F                Like F but stop when search pattern is found.
+  r  ^R  ^L            Repaint screen.
+  R                    Repaint screen, discarding buffered input.
+        ---------------------------------------------------
+        Default "window" is the screen height.
+        Default "half-window" is half of the screen height.
+ ---------------------------------------------------------------------------
+
+                          SEARCHING
+
+  /pattern          *  Search forward for (N-th) matching line.
+  ?pattern          *  Search backward for (N-th) matching line.
+  n                 *  Repeat previous search (for N-th occurrence).
+  N                 *  Repeat previous search in reverse direction.
+  ESC-n             *  Repeat previous search, spanning files.
+  ESC-N             *  Repeat previous search, reverse dir. & spanning files.
+  ESC-u                Undo (toggle) search highlighting.
+  &pattern          *  Display only matching lines
+        ---------------------------------------------------
+        A search pattern may be preceded by one or more of:
+        ^N or !  Search for NON-matching lines.
+HELP -- Press RETURN for more, or q when done...skipping...
+commit a53ebb606210260015e43cac9e74e803e92859f4
+Author: Shawn Guldenzopf <guldens@LabImage2016-17>
+Date:   Thu Apr 11 10:19:35 2019 -0700
+
+    Changed test.txt to test2.txt
+
+commit bf25972d77bacd0e8c4a935460b751f1ce580644
+Author: Shawn Guldenzopf <guldens@LabImage2016-17>
+Date:   Thu Apr 11 10:17:16 2019 -0700
+
+    added text test to test.txt
+
+commit 3ad1911a845fbf3083f5339ca04ef2506ad093b7
+Author: Shawn Guldenzopf <guldens@LabImage2016-17>
+Date:   Thu Apr 11 10:13:53 2019 -0700
+
+    Added step 13 (name, wwu, github name) to username.txt
+
+commit 6089279445a3e108e48c0c1b732048ff5125607d
+Author: Shawn Guldenzopf <guldens@LabImage2016-17>
+Date:   Thu Apr 11 10:09:39 2019 -0700
+
+    Added hobbies to writeup.txt
+...skipping...
+
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
+  b  ^B  ESC-v      *  Backward one window (or N lines).
+  z                 *  Forward  one window (and set window to N).
+  w                 *  Backward one window (and set window to N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to N).
+  u  ^U             *  Backward one half-window (and set half-window to N).
+  ESC-)  RightArrow *  Left  one half screen width (or N positions).
+...skipping...
+  -# [N]  ....  --shift=[N]
+                  Horizontal scroll amount (0 = one half screen width)
+      ........  --no-keypad
+                  Don't send termcap keypad init/deinit strings.
+      ........  --follow-name
+                  The F command changes files if the input file is renamed.
+      ........  --use-backslash
+                  Subsequent options use backslash as escape char.
+
+
+ ---------------------------------------------------------------------------
+
+                          LINE EDITING
+
+        These keys can be used to edit text being entered 
+        on the "command line" at the bottom of the screen.
+
+ RightArrow ..................... ESC-l ... Move cursor right one character.
+ LeftArrow ...................... ESC-h ... Move cursor left one character.
+ ctrl-RightArrow  ESC-RightArrow  ESC-w ... Move cursor right one word.
+ ctrl-LeftArrow   ESC-LeftArrow   ESC-b ... Move cursor left one word.
+ HOME ........................... ESC-0 ... Move cursor to start of line.
+ END ............................ ESC-$ ... Move cursor to end of line.
+ BACKSPACE ................................ Delete char to left of cursor.
+ DELETE ......................... ESC-x ... Delete char under cursor.
+ ctrl-BACKSPACE   ESC-BACKSPACE ........... Delete word to left of cursor.
+ ctrl-DELETE .... ESC-DELETE .... ESC-X ... Delete word under cursor.
+ ctrl-U ......... ESC (MS-DOS only) ....... Delete entire line.
+ UpArrow ........................ ESC-k ... Retrieve previous command line.
+ DownArrow ...................... ESC-j ... Retrieve next command line.
+ TAB ...................................... Complete filename & cycle.
+ SHIFT-TAB ...................... ESC-TAB   Complete filename & reverse cycle.
+ ctrl-L ................................... Complete filename, list all.
+
+
+
+
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
+  b  ^B  ESC-v      *  Backward one window (or N lines).
+  z                 *  Forward  one window (and set window to N).
+  w                 *  Backward one window (and set window to N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to N).
+  u  ^U             *  Backward one half-window (and set half-window to N).
+  ESC-)  RightArrow *  Left  one half screen width (or N positions).
+  ESC-(  LeftArrow  *  Right one half screen width (or N positions).
+  F                    Forward forever; like "tail -f".
+  ESC-F                Like F but stop when search pattern is found.
+  r  ^R  ^L            Repaint screen.
+  R                    Repaint screen, discarding buffered input.
+        ---------------------------------------------------
+        Default "window" is the screen height.
+        Default "half-window" is half of the screen height.
+ ---------------------------------------------------------------------------
+
+                          SEARCHING
+
+  /pattern          *  Search forward for (N-th) matching line.
+  ?pattern          *  Search backward for (N-th) matching line.
+  n                 *  Repeat previous search (for N-th occurrence).
+  N                 *  Repeat previous search in reverse direction.
+  ESC-n             *  Repeat previous search, spanning files.
+  ESC-N             *  Repeat previous search, reverse dir. & spanning files.
+  ESC-u                Undo (toggle) search highlighting.
+  &pattern          *  Display only matching lines
+        ---------------------------------------------------
+        A search pattern may be preceded by one or more of:
+        ^N or !  Search for NON-matching lines.
+HELP -- Press RETURN for more, or q when done...skipping...
+commit a53ebb606210260015e43cac9e74e803e92859f4
+Author: Shawn Guldenzopf <guldens@LabImage2016-17>
+Date:   Thu Apr 11 10:19:35 2019 -0700
+
+    Changed test.txt to test2.txt
+
+commit bf25972d77bacd0e8c4a935460b751f1ce580644
+Author: Shawn Guldenzopf <guldens@LabImage2016-17>
+Date:   Thu Apr 11 10:17:16 2019 -0700
+
+    added text test to test.txt
+
+commit 3ad1911a845fbf3083f5339ca04ef2506ad093b7
+Author: Shawn Guldenzopf <guldens@LabImage2016-17>
+Date:   Thu Apr 11 10:13:53 2019 -0700
+
+    Added step 13 (name, wwu, github name) to username.txt
+
+commit 6089279445a3e108e48c0c1b732048ff5125607d
+Author: Shawn Guldenzopf <guldens@LabImage2016-17>
+Date:   Thu Apr 11 10:09:39 2019 -0700
+
+    Added hobbies to writeup.txt
+
+[1]+  Stopped                 git log
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git diff test2.txt
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git checkout -b question3
+Switched to a new branch 'question3'
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git add writeup.txt
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git commit -m "Added favorite song to writeup.txt"
+[question3 815e4f2] Added favorite song to writeup.txt
+ Committer: Shawn Guldenzopf <guldens@LabImage2016-17>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git merge question3
+Updating a53ebb6..815e4f2
+Fast-forward
+ writeup.txt | 1 +
+ 1 file changed, 1 insertion(+)
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': ShawnGuldenzopf
+Password for 'https://ShawnGuldenzopf@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 389 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/CSCI241Spring2019/lab-1-ShawnGuldenzopf.git
+   a53ebb6..815e4f2  master -> master
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ gradle build
+
+Welcome to Gradle 5.0!
+
+Here are the highlights of this release:
+ - Kotlin DSL 1.0
+ - Task timeouts
+ - Dependency alignment aka BOM support
+ - Interactive `gradle init`
+
+For more details see https://docs.gradle.org/5.0/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+BUILD SUCCESSFUL in 4s
+5 actionable tasks: 5 executed
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ gradle run
+
+> Task :run
+Hello World!
+
+BUILD SUCCESSFUL in 0s
+2 actionable tasks: 1 executed, 1 up-to-date
+
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ gradle run --args="123"
+
+> Task :run
+123
+
+BUILD SUCCESSFUL in 0s
+2 actionable tasks: 1 executed, 1 up-to-date
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ gradle run --args="123"
+
+> Task :run
+Hello 123
+
+BUILD SUCCESSFUL in 0s
+2 actionable tasks: 2 executed
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git add src/main/lab1/Hello.java
+fatal: pathspec 'src/main/lab1/Hello.java' did not match any files
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git add src/main/java/lab1/Hello.java
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git commit -m "Edited Hello.java to now print the 0th index command line argument"
+[master 8e9633b] Edited Hello.java to now print the 0th index command line argument
+ Committer: Shawn Guldenzopf <guldens@LabImage2016-17>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': ShawnGuldenzopf
+Password for 'https://ShawnGuldenzopf@github.com': 
+Counting objects: 7, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (7/7), 525 bytes | 0 bytes/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/CSCI241Spring2019/lab-1-ShawnGuldenzopf.git
+   815e4f2..8e9633b  master -> master
+guldens@CF165-06:~/csci241/lab-1-ShawnGuldenzopf$ exit
+exit
+There are stopped jobs.
+
